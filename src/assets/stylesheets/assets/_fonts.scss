@@ -1,3 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
+
+@font-face {
+  font-family: 'Brand Icons';
+  src:  url('../fonts/brand-icons.eot?9lmy11');
+  src:  url('../fonts/brand-icons.eot?9lmy11#iefix') format('embedded-opentype'),
+    url('../fonts/brand-icons.ttf?9lmy11') format('truetype'),
+    url('../fonts/brand-icons.woff?9lmy11') format('woff'),
+    url('../fonts/brand-icons.svg?9lmy11#brand-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -22,7 +22,7 @@ gulp.task('lint', function() {
 
 // Compile Our Sass
 gulp.task('sass', function() {
-  return gulp.src(src + 'assets/stylesheets/*.scss')
+  return gulp.src(src + 'assets/stylesheets/**/*.scss')
     .pipe(sass())
     .pipe(gulp.dest(dist + 'css'))
     .pipe(browserSync.stream())
@@ -40,7 +40,7 @@ gulp.task('scripts', ['copy:vendors'], function() {
 });
 
 gulp.task('pug', function() {
-  return gulp.src(src + 'views/**/*.pug')
+  return gulp.src(src + 'views/*.pug')
     .pipe(pug())
     .pipe(gulp.dest(dist))
     .pipe(browserSync.stream())

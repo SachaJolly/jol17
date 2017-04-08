@@ -5,7 +5,18 @@ html(lang='en')
     meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui")
     link(rel="stylesheet", href="css/main.css")
   body
-    i.material-icons home
-    h1 Pug Examples
-    div.container
-      p Cool Pug example! Yay !
+
+    include layouts/_header.pug
+
+    .container
+      .content.col-xs-12.col-md-10.offset-md-1
+
+        include layouts/_about.pug
+
+        include layouts/_brands.pug
+
+        include layouts/_works.pug
+
+        include layouts/_contact.pug
+
+    include layouts/_footer.pug

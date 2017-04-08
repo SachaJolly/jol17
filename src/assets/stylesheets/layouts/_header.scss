@@ -1,0 +1,32 @@
+.header {
+  background-color: transparent;
+  padding: 8rem 0 6rem;
+  text-align: center;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    background-color: $brand-primary;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 24rem;
+    z-index: -1;
+  }
+}
+
+.header-logo {
+  display: block;
+  width: 5rem 4rem;
+  font: 0/0 a;
+  position: relative;
+
+  &:before {
+    content: "🍑";
+    font-size: 4rem;
+    line-height: 4rem;
+    font-family: "Brand Icons";
+    color: $white;
+  }
+}
